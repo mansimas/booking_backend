@@ -10,7 +10,7 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
   gem 'rspec-rails', '~> 3.5'
 end
 
