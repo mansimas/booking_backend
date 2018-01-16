@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :rental do
-    name { Faker::Lorem.word }
+    name { Faker::Name.first_name }
     daily_rate { Faker::Number.decimal(2) }
   end
 end
