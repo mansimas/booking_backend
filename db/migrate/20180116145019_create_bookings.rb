@@ -1,8 +1,8 @@
 class CreateBookings < ActiveRecord::Migration[5.1]
   def change
     create_table :bookings do |t|
-      t.datetime :start_at
-      t.datetime :end_at
+      t.date :start_at
+      t.date :end_at
       t.string :client_email
       t.float :price
       t.references :rental, foreign_key: true
